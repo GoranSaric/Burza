@@ -1,0 +1,421 @@
+body {
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+	cursor: pointer;
+}
+#main-menu {
+	position: relative;
+	z-index: 10;
+}
+#main-menu ul li {
+	display: inline-block;
+	padding: 0 40px;
+	position: relative;
+}
+#main-menu ul li ul li {
+	padding: 10px 40px;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 0 30px;
+	transition: ease-in-out 1s;
+}
+.logo {
+	float: left;
+	padding: 10px 15px;
+	z-index: 10;
+}
+.nav {
+	padding: 15px 0;
+	float: right;
+}
+.nav li {
+	color: #fff;
+}
+.dropdown-content {
+	display: none;
+	background-color: #f9f9f9;
+	padding: 12px 0;
+	z-index: 1;
+	list-style-type: none;
+	border: 1px solid #F2F4F6;
+	background: #fff;
+	box-shadow: -20px 40px 64px rgba(15, 123, 138, 0.16);
+	border-radius: 4px;
+	max-width: 192px;
+	padding-left: 0;
+	position: absolute;
+	left: -10px;
+	text-align: center;
+	margin-top: 20px;
+}
+.dropdown-content li {
+	font-family: Museo Sans;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.4em;
+	text-align: center;
+	color: #000;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown span:hover {
+	color: #17A4A4;
+}
+.button a {
+	text-decoration: none;
+	border: 1px solid #17A4A4;
+	border-radius: 4px;
+	background-color: #17A4A4;
+	color: #fff;
+	padding: 10px 30px;
+	transition: background 1s ease-out;
+	font-size: 14px;
+}
+.button a:hover {
+	border: 1px solid #1ECDCD;
+	background: linear-gradient(270deg, rgba(30, 205, 205, 0) 36.59%, #1ECDCD 100%), #1ECDCD;
+}
+.front-wrapper {
+	position: relative;
+	background: #FBFCFE;
+}
+.header-background {
+	background: url("../assets/images/image.png") no-repeat center center;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	max-width: 1920px;
+	width: 100%;
+	z-index: 5;
+}
+.header-background:after {
+	content: " ";
+	z-index: 5;
+	display: block;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(180deg, rgba(23, 164, 164, 0.12) 0%, rgba(23, 164, 164, 0.06) 100%), linear-gradient(180deg, rgba(5, 19, 46, 0.72) 0%, rgba(5, 32, 46, 0.54) 100%);
+}
+.header-content {
+	position: absolute;
+	left: 352px;
+	top: 213px;
+}
+.header-background h2 {
+	position: absolute;
+	left: 87px;
+	top: 28px;
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 96px;
+	line-height: 100px;
+	letter-spacing: -0.01em;
+	color: #929FAD;
+	z-index: 10;
+}
+.header-background h1 {
+	position: absolute;
+	left: 78px;
+	top: 54px;
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 144px;
+	line-height: 120%;
+	display: flex;
+	align-items: flex-end;
+	color: #FFFFFF;
+	z-index: 10;
+}
+.header-background h5 {
+	position: absolute;
+	left: 50px;
+	top: 245px;
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #17A4A4;
+	z-index: 10;
+	width: 800px;
+}
+.header-background p {
+	position: absolute;
+	width: 710px;
+	height: 122px;
+	left: 79px;
+	top: 345px;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 40px;
+	color: #FFFFFF;
+	z-index: 10;
+}
+.header-background ul {
+	list-style-type: none;
+	position: absolute;
+	left: 0;
+	top: 469px;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 40px;
+	color: #FFFFFF;
+	z-index: 10;
+	width: 1100px;
+}
+.header-background ul li img {
+	padding-right: 20px
+}
+.scroll-box {
+	position: absolute;
+	top: 95%;
+	z-index: 10;
+	left: 45%;
+}
+.big-data-section {
+	background: url("../assets/images/Polygon.png") no-repeat;
+	position: absolute;
+	max-width: 1000px;
+	height: 2400px;
+	top: 481px;
+	z-index: -10;
+	width: 100%;
+}
+.big-data-content {
+	max-width: 1200px;
+	margin: 10% auto;
+}
+.big-data-title h5 {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #17A4A4;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.big-data-subtitle {
+	margin-top: 10%;
+}
+.big-data-subtitle span {
+	border-bottom: 1px solid #929FAD;
+	color: #17A4A4;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+.big-data-subtitle span:hover {
+	border-bottom: 1px solid #D5BB78;;
+}
+.big-data-subtitle h2 {
+	font-family: Museo Sans;
+	font-size: 48px;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #212A3D;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.big-data-subtitle p {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #394357;
+	max-width: 700px;
+	margin: 0 auto;
+}
+.big-data-list ul {
+	list-style-type: none;
+}
+
+.cost-section {
+	background: url("../assets/images/background_alt.png") no-repeat;
+	height: 1600px;
+	width: 100%;
+}
+.cost-content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.cost-title, .slide-title {
+	max-width: 840px;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+.cost-title h2 {
+	font-family: Museo Sans;
+	font-size: 48px;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #fff;
+}
+.cost-title p {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #F2F4F6;
+}
+.cost-list {
+	margin-top: 5%;
+}
+.cost-list ul {
+	list-style-type: none;
+	display: flex;
+}
+.cost-list ul li {
+	display: grid;
+	text-align: center;
+	max-width: 400px;
+	width: 33%;
+	height: 240px;
+}
+.cost-list ul li img {
+	margin-left: 60px;
+}
+.cost-list ul li span {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #F2F4F6;
+}
+.slide-title h3 {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+}
+.cost-slide {
+	position: relative;
+}
+.cost-map {
+	display: flex;
+	position: absolute;
+	bottom: 0px;
+	left: 240px;
+	max-width: 1600px;
+}
+.cost-map img {
+	width: 100%;
+	max-width: 800px;
+}
+.cost-device {
+	position: absolute;
+	left: 555px;
+	top: 85px;
+	display: flex;
+}
+.cost-map .cost-device img {
+	width: 100%;
+	max-width: 340px;
+}
+.triglav-content {
+	height: 560px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-left: 60px;
+    margin-top: 20px;
+    position: absolute;
+    max-width: 520px;
+    width: 100%;
+    right: -40px;
+    top: 100px;
+}
+.triglav-content img {
+	margin: 40px 0 0 60px;
+	width: unset;
+	max-width: unset;
+}
+.triglav-content h4 {
+	margin: 0px 42px 0 78px;
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 50px;
+	letter-spacing: -0.01em;
+	color: #212A3D;
+}
+.triglav-content h4 span {
+	color: #17A4A4;
+}
+.triglav-content p {
+	margin: 0px 42px 0 78px;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 40px;
+	color: #212A3D;
+}
+.triglav-content hr {
+	width: 51px;
+	height: 2px;
+	left: 78px;
+	background-color: #17A4A4;
+	transition: background 0.6s ease-out;
+	position: absolute;
+}
+.triglav-content hr:hover {
+	background-color: #D5BB78;
+}
+.triglav-content a {
+	position: absolute;
+	bottom: 52px;
+	left: 77px;
+	background: #17A4A4;
+	border: 1px solid #17A4A4;
+	box-sizing: border-box;
+	box-shadow: 0px 16px 32px rgba(23, 164, 164, 0.16);
+	border-radius: 4px;
+	text-decoration: none;
+	color: #fff;
+	padding: 20px 45px;
+	text-transform: uppercase;
+	transition: background 1s ease-out;
+}
+.triglav-content a:hover {
+	border: 1px solid #1ECDCD;
+	background: linear-gradient(270deg, rgba(30, 205, 205, 0) 36.59%, #1ECDCD 100%), #1ECDCD;
+}
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 50px solid #fff;
+	transform: rotateX(155deg);
+	position: absolute;
+	left: -40px;
+	top: 50px;
+}
