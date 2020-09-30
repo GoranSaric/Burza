@@ -532,7 +532,10 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	width: 100%;
 	margin: 5% auto;
 }
-
+.sponsor-bg {
+	background: url("../assets/images/background_alt_long.png");
+	height: 2800px;
+}
 
 
 
