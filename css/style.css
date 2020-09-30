@@ -534,25 +534,141 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .sponsor-bg {
 	background: url("../assets/images/background_alt_long.png");
-	height: 2800px;
+	height: 2400px;
+	position: relative;
 }
-
-
-
-
-
-
-
-
-
-footer {
+.sponsor-title {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 10%;
+}
+.sponsor-title h2 {
+	font-family: Museo Sans;
+	font-size: 48px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+}
+.sponsor-title h5 {
+	font-family: Museo Sans;
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #17A4A4;
+}
+.sponsor-title p {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	color: #F2F4F6;
+	opacity: 0.64;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.sponsor-title img {
+	position: absolute;
+	top: 400px;
+}
+.list-title {
+	position: absolute;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    left: 17%;
+    top: 45%;
+}
+.list-title h2 {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #fff;
+}
+.list-title h5 {
+	font-family: Museo Sans;
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #17A4A4;
+}
+.sponsor-list {
+	position: absolute;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    left: 17%;
+    bottom: 35%;
+}
+.sponsor-list ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+	flex-wrap: wrap;
+}
+.certificate-content {
+	    position: absolute;
+    bottom: 8%;
+    max-width: 1440px;
+    margin: 0 auto;
+    left: 20%;
+}
+.certificate-box-1, .certificate-box-2 {
+	display: flex;
+	align-items: center;
+}
+.certificate-box-2-title {
+	width: 25%;
+}
+.certificate-box-1-title h3, .certificate-box-2-title h3 {
+	font-family: Museo Sans;
+	font-size: 48px;
+	line-height: 60px;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+	border-bottom: 4px solid #17A4A4;
+	padding-bottom: 30px;
+	width: 20%;
+}
+.certificate-box-1 p {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 40px;
+	color: #F2F4F6;
+	opacity: 0.64;
+	max-width: 500px;
+	margin-right: 20px;
+	margin-left: 40px;
+}
+.certificate-box-2 p {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 40px;
+	color: #F2F4F6;
+	opacity: 0.64;
+	max-width: 805px;
+}
+.pre-footer {
 	background: url("../assets/images/footer-background.png");
 	height: 740px;
 	max-width: 1920px;
 	width: 100%;
 	position: relative;
 }
-.footer-box {
+.pre-footer-box {
 	max-width: 1440px;
 	width: 100%;
 	background: #fff;
@@ -564,7 +680,7 @@ footer {
 	border-bottom: 8px solid #fff;
 	transition: ease-in-out 2s;
 }
-.footer-content h5 {
+.pre-footer-content h5 {
 	font-family: Museo Sans;
 	font-style: normal;
 	font-weight: 500;
@@ -578,7 +694,7 @@ footer {
 	left: 8.4%;
 	top: 22.7%;
 }
-.footer-title h2 {
+.pre-footer-title h2 {
 	font-family: Museo Sans;
 	font-style: normal;
 	font-weight: bold;
@@ -589,7 +705,7 @@ footer {
 	left: 8.4%;
 	top: 22.7%;
 }
-.footer-title h3 {
+.pre-footer-title h3 {
 	font-family: Museo Sans;
 	font-style: normal;
 	font-weight: bold;
@@ -606,18 +722,20 @@ footer {
 	bottom: 7%;
 	transition: transform 2s ease-in-out;
 }
-.footer-box:hover .arrow {
+.pre-footer-box:hover .arrow {
 	transform: rotate(-90deg);
 }
-.footer-box:hover {
+.pre-footer-box:hover {
 	border-bottom: 8px solid #D5BB78;
 }
-.footer-map {
+.pre-footer-map {
 	position: absolute;
 	right: 0;
 	bottom: -20px;
 }
-
+footer {
+	position: relative;
+}
 .footer-col-1 {
 	position: absolute;
 	bottom: 5%;
