@@ -30,9 +30,17 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .nav {
 	padding: 15px 0;
 	float: right;
+	text-transform: uppercase; 
 }
-.nav li {
+.nav li a {
 	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all ease-in-out 1s;
+}
+.nav li a:hover {
+	border-bottom: 1px solid #D5BB78;
+	color: #17A4A4;
 }
 .dropdown-content {
 	display: none;
@@ -215,10 +223,10 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .big-data-subtitle span {
 	border-bottom: 1px solid #929FAD;
 	color: #17A4A4;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    transition: all ease-in-out .2s;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	transition: all ease-in-out .2s;
 }
 .big-data-subtitle span:hover {
 	border-bottom: 1px solid #D5BB78;;
@@ -341,15 +349,16 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .triglav-content {
 	height: 560px;
-    border: 1px solid #fff;
-    background-color: #fff;
-    margin-left: 60px;
-    margin-top: 20px;
-    position: absolute;
-    max-width: 520px;
-    width: 100%;
-    right: -40px;
-    top: 100px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	margin-left: 60px;
+	margin-top: 20px;
+	position: absolute;
+	max-width: 520px;
+	width: 100%;
+	right: -40px;
+	top: 100px;
+	border-bottom: 8px solid #F22A2B;
 }
 .triglav-content img {
 	margin: 40px 0 0 60px;
@@ -418,4 +427,108 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	position: absolute;
 	left: -40px;
 	top: 50px;
+}
+.hexagon {
+	position: relative;
+	width: 160px;
+	height: 42px;
+	background-color: #fff;
+	background: #fff;
+	box-shadow: -20px 40px 64px rgba(15, 138, 131, 0.24);
+	margin: 0 auto;
+}
+.hexagon:before,
+.hexagon:after {
+	content: " ";
+	position: absolute;
+	border-top: 21px solid transparent;
+	border-bottom: 21px solid transparent;
+}
+.hexagon:before {
+	left: 100%;
+	border-left: 20px solid #fff;
+	box-shadow: -20px 40px 64px rgba(15, 138, 131, 0.24);
+}
+.hexagon:after {
+	right: 100%;
+	border-right: 20px solid #fff;
+	box-shadow: -20px 40px 64px rgba(15, 138, 131, 0.24);
+}
+.prev-arrow img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.next-arrow img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.hexagon a {
+	position: absolute;
+	bottom: 13px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	color: #929FAD;
+}
+.monetization-title {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: -0.01em;
+	max-width: 1240px;
+	width: 100%;
+	margin: 5% auto;
+}
+.monetization {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 10px 20px 100px -40px;
+}
+.monetization-content {
+	display: flex;
+}
+.monetization-box {
+	border: 1px solid #fff;
+	width: 480px;
+	position: relative;
+	border-bottom: 8px solid #B4E0E0;
+	height: 280px;
+	transition: border 2s ease-in-out;
+}
+.monetization-box:hover {
+	border-bottom: 8px solid #D5BB78;
+}
+.monetization-box img {
+	position: absolute;
+	bottom: 140px;
+	left: 60px;
+}
+.monetization-box p {
+	position: absolute;
+	max-width: 300px;
+	padding: 78px 59px 62px 61px;
+	margin: 0;
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+.monetization-subtitle {
+	font-family: Museo Sans;
+	font-size: 36px;
+	line-height: 60px;
+	text-align: center;
+	color: #17A4A4;
+	max-width: 1240px;
+	width: 100%;
+	margin: 5% auto;
 }
