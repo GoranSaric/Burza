@@ -532,3 +532,115 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	width: 100%;
 	margin: 5% auto;
 }
+
+
+
+
+
+
+
+
+
+
+footer {
+	background: url("../assets/images/footer-background.png");
+	height: 740px;
+	max-width: 1920px;
+	width: 100%;
+	position: relative;
+}
+.footer-box {
+	max-width: 1440px;
+	width: 100%;
+	background: #fff;
+	height: 720px;
+	position: absolute;
+	overflow: hidden;
+	bottom: 140px;
+	left: 16.3%;
+	border-bottom: 8px solid #fff;
+	transition: ease-in-out 2s;
+}
+.footer-content h5 {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 120%;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	font-variant: small-caps;
+	color: #17A4A4;
+	position: absolute;
+	left: 8.4%;
+	top: 22.7%;
+}
+.footer-title h2 {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 144px;
+	line-height: 120%;
+	color: #212A3D;
+	position: absolute;
+	left: 8.4%;
+	top: 22.7%;
+}
+.footer-title h3 {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 144px;
+	line-height: 120%;
+	color: #17A4A4;
+	position: absolute;
+	left: 7%;
+	top: 26.7%;
+}
+.arrow {
+	position: absolute;
+	left: 7.4%;
+	bottom: 7%;
+	transition: transform 2s ease-in-out;
+}
+.footer-box:hover .arrow {
+	transform: rotate(-90deg);
+}
+.footer-box:hover {
+	border-bottom: 8px solid #D5BB78;
+}
+.footer-map {
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+}
+
+.footer-col-1 {
+	position: absolute;
+	bottom: 5%;
+	left: 19%;
+}
+.footer-col-1 h5 {
+	font-family: Museo Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 120%;
+	text-transform: uppercase;
+	font-variant: small-caps;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+.footer-col-2 {
+	position: absolute;
+	bottom: 5%;
+	right: 19%;
+}
+.footer-col-2 ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+.footer-col-2 ul li {
+	padding: 0 10px;
+}
