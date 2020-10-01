@@ -394,10 +394,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	width: 50%;
 }
 .cost-device {
-	position: absolute;
-	left: 39%;
-	top: 85px;
-	display: flex;
+	position: relative;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 .cost-map .cost-device img {
 	width: 100%;
