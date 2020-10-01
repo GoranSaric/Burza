@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .scroll-box {
 	position: absolute;
-	top: 95%;
+	top: 94%;
 	z-index: 10;
 	left: 45%;
 }
@@ -282,6 +282,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	color: #394357;
 	max-width: 700px;
 	margin: 0 auto;
+}
+.big-data-list {
+	margin-top: 50px;
 }
 .big-data-list ul {
 	list-style-type: none;
@@ -372,7 +375,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	display: flex;
 	position: absolute;
 	bottom: 0px;
-	left: 240px;
+	left: 12.5%;
 	max-width: 1600px;
 }
 .cost-map img {
@@ -381,7 +384,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .cost-device {
 	position: absolute;
-	left: 555px;
+	left: 39%;
 	top: 85px;
 	display: flex;
 }
