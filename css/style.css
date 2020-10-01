@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 }
 .scroll-box {
 	position: absolute;
-	top: 94%;
+	top: 110%;
 	z-index: 10;
 	left: 45%;
 }
@@ -454,9 +454,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	height: 600px;
 	width: 100%;
 }
-
-
-
 .cost-map .cost-device img {
 	width: 100%;
 	max-width: 340px;
@@ -473,6 +470,10 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	right: -2.5%;
 	top: 100px;
 	border-bottom: 8px solid #F22A2B;
+	transition: 1s ease-out;
+}
+.triglav-content:hover {
+	border-bottom: 8px solid #D5BB78;
 }
 .triglav-content img {
 	margin: 40px 0 0 60px;
