@@ -368,19 +368,30 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	letter-spacing: -0.01em;
 	color: #FFFFFF;
 }
+
 .cost-slide {
+	display: flex;
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
 	position: relative;
 }
-.cost-map {
-	display: flex;
-	position: absolute;
-	bottom: 0px;
-	left: 12.5%;
-	max-width: 1600px;
-}
-.cost-map img {
-	width: 100%;
+.cost-map-1 {
+	background: url("../assets/images/illustration.png"),
+	url("../assets/images/body.png");
+	height: 800px;
 	max-width: 800px;
+	position: absolute;
+	left: 0px;
+	width: 50%;
+}
+.cost-map-2 {
+	background: url("../assets/images/body.png");
+	height: 800px;
+	max-width: 800px;
+	position: absolute;
+	right: 0px;
+	width: 50%;
 }
 .cost-device {
 	position: absolute;
@@ -401,7 +412,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	position: absolute;
 	max-width: 520px;
 	width: 100%;
-	right: -40px;
+	right: -2.5%;
 	top: 100px;
 	border-bottom: 8px solid #F22A2B;
 }
@@ -481,8 +492,8 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
     background: #fff;
     box-shadow: -20px 40px 64px rgba(15, 138, 131, 0.24);
     margin: 0 auto;
-    bottom: -20px;
-    left: 46%;
+    top: 780px;
+    left: 45%;
 }
 .hexagon:before,
 .hexagon:after {
