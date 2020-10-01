@@ -892,8 +892,8 @@ footer {
 }
 .footer-col-1-contact {
 	position: absolute;
-	bottom: 5%;
 	left: 19%;
+	top: 840px;
 }
 .footer-col-1-contact h5 {
 	font-family: Museo Sans;
@@ -908,8 +908,9 @@ footer {
 }
 .footer-col-2-contact {
 	position: absolute;
-	bottom: 5%;
-	right: 19%;
+    bottom: 5%;
+    right: 19%;
+    top: 840px;
 }
 .footer-col-2-contact ul {
 	list-style-type: none;
@@ -997,6 +998,8 @@ footer {
 	position: absolute;
 	top: 157px;
 	left: 0;
+	height: 780px;
+	z-index: 0;
 }
 .contact-content {
 	position: absolute;
