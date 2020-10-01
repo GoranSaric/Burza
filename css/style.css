@@ -471,13 +471,15 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	top: 50px;
 }
 .hexagon {
-	position: relative;
-	width: 160px;
-	height: 42px;
-	background-color: #fff;
-	background: #fff;
-	box-shadow: -20px 40px 64px rgba(15, 138, 131, 0.24);
-	margin: 0 auto;
+	position: absolute;
+    width: 160px;
+    height: 42px;
+    background-color: #fff;
+    background: #fff;
+    box-shadow: -20px 40px 64px rgba(15, 138, 131, 0.24);
+    margin: 0 auto;
+    bottom: -20px;
+    left: 46%;
 }
 .hexagon:before,
 .hexagon:after {
