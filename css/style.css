@@ -142,11 +142,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	background: linear-gradient(180deg, rgba(23, 164, 164, 0.12) 0%, rgba(23, 164, 164, 0.06) 100%), linear-gradient(180deg, rgba(5, 19, 46, 0.72) 0%, rgba(5, 32, 46, 0.54) 100%);
 }
 .header-content {
-	position: relative;
+	position: absolute;
 	top: 213px;
-	margin: 0 auto;
-	max-width: 1400px;
-	width: 100%;
+	left: 10%;
 }
 .header-background h2 {
 	position: absolute;
