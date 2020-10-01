@@ -398,11 +398,65 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	right: 0px;
 	width: 50%;
 }
-.cost-device {
+.smartphone-border {
 	position: relative;
-	margin: 0 auto;
-	margin-top: 80px;
+	max-width: 372px;
+	height: 600px;
+	width: 100%;
+	margin: auto;
+	border: 1px #F2F4F6 solid;
+	border-top-width: 3px;
+	border-bottom-width: 123px;
+	border-radius: 36px;
+	top: 50px;
 }
+.smartphone {
+	max-width: 340px;
+	height: 600px;
+	width: 100%;
+	margin: auto;
+	border: 16px #fff solid;
+	border-top-width: 60px;
+	border-bottom-width: 60px;
+	border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone-border:before {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 5px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #333;
+	border-radius: 10px;
+}
+/* The circle on the bottom of the device */
+.smartphone-border:after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 5px;
+	position: absolute;
+	left: 50%;
+	bottom: -95px;
+	transform: translate(-50%, -50%);
+	background: #333;
+	border-radius: 10px;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content img {
+	max-width: 360px;
+	height: 600px;
+	width: 100%;
+}
+
+
+
 .cost-map .cost-device img {
 	width: 100%;
 	max-width: 340px;
