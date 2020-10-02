@@ -224,12 +224,15 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 .header-background ul li img {
 	padding-right: 20px
 }
-.scroll-box {
+
+/* Under construction */
+/*.scroll-box {
 	position: absolute;
 	top: 110%;
 	z-index: 10;
 	left: 45%;
-}
+}*/
+/* Under construction */
 .big-data-section {
 	background: url("../assets/images/Polygon.png") no-repeat;
 	position: absolute;
