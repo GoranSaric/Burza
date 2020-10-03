@@ -294,26 +294,26 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		margin: 0 auto;
 	}
 	.big-data-list ul {
-	column-count: 2;
-	column-gap: 80px;
-	list-style-type: none;
-	max-width: 1200px;
-	margin: 5% auto;
-}
-.big-data-list ul li {
-	display: flex;
-	padding-bottom: 5%;
-}
-.big-data-list ul li img {
-	vertical-align: middle;
-	padding-right: 20px;
-}
-.big-data-list ul li span {
-	display: block;
-	max-width: 550px;
-	width: 100%;
-	padding-top: 30px;
-}
+		column-count: 2;
+		column-gap: 80px;
+		list-style-type: none;
+		max-width: 1200px;
+		margin: 5% auto;
+	}
+	.big-data-list ul li {
+		display: flex;
+		padding-bottom: 5%;
+	}
+	.big-data-list ul li img {
+		vertical-align: middle;
+		padding-right: 20px;
+	}
+	.big-data-list ul li span {
+		display: block;
+		max-width: 550px;
+		width: 100%;
+		padding-top: 30px;
+	}
 
 	.cost-section {
 		background: url("../assets/images/background_alt.png") no-repeat;
