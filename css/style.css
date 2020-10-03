@@ -319,7 +319,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		background: url("../assets/images/background_alt.png") no-repeat;
 		height: 1600px;
 		width: 100%;
-		overflow: hidden;
 	}
 	.cost-content {
 		max-width: 1200px;
