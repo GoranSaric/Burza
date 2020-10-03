@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		margin-top: 10%;
 	}
 	.big-data-subtitle span {
-		border-bottom: 1px solid #929FAD;
+		border-bottom: 1px solid rgba(146, 159, 173, 0.5);
 		color: #17A4A4;
 		text-decoration: none;
 		display: inline-block;
@@ -293,24 +293,28 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		max-width: 700px;
 		margin: 0 auto;
 	}
-	.big-data-list {
-		margin-top: 50px;
-	}
 	.big-data-list ul {
-		list-style-type: none;
-		max-width: 1200px;
-		margin: 0 auto;
-		column-count: 2;
-	}
-	.big-data-list ul li {
-		display: block;
-		height: 100px;
-		margin-bottom: 60px;
-	}
-	.big-data-list ul li img {
-		vertical-align: middle;
-		margin-right: 20px;
-	}
+	column-count: 2;
+	column-gap: 80px;
+	list-style-type: none;
+	max-width: 1200px;
+	margin: 5% auto;
+}
+.big-data-list ul li {
+	display: flex;
+	padding-bottom: 5%;
+}
+.big-data-list ul li img {
+	vertical-align: middle;
+	padding-right: 20px;
+}
+.big-data-list ul li span {
+	display: block;
+	max-width: 550px;
+	width: 100%;
+	padding-top: 30px;
+}
+
 	.cost-section {
 		background: url("../assets/images/background_alt.png") no-repeat;
 		height: 1600px;
