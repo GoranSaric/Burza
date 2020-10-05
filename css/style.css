@@ -381,6 +381,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		text-align: center;
 		letter-spacing: -0.01em;
 		color: #FFFFFF;
+		margin: 10% 0;
 	}
 
 	.cost-slide {
@@ -616,12 +617,18 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		margin: 0 auto;
 		box-shadow: 10px 20px 100px -40px;
 	}
-	.monetization-content {
+	.monetization-content ul {
 		display: flex;
+		max-width: 1600px;
+		width: 100%;
+		list-style-type: none;
+		margin: 0 auto;
+		padding: 0;
 	}
 	.monetization-box {
 		border: 1px solid #fff;
-		width: 480px;
+		max-width: 480px;
+		width: 34%;
 		position: relative;
 		border-bottom: 8px solid #B4E0E0;
 		height: 280px;
@@ -659,7 +666,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 	.sponsor-bg {
 		background: url("../assets/images/background_alt_long.png");
-		height: 2400px;
+		height: 3000px;
 		position: relative;
 		max-width: 1920px;
 		width: 100%;
@@ -742,6 +749,12 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		justify-content: space-between;
 		list-style-type: none;
 		flex-wrap: wrap;
+		max-width: 1140px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.sponsor-list ul li {
+		width: 15%;
 	}
 	.certificate-content {
 		position: relative;
@@ -1276,7 +1289,31 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			padding: 0 10px;
 		}
 	}
+	@media screen and (max-width: 1120px) {
+		.monetization-box p {
+			padding: 50px 29px 62px 61px;
+			line-height: 25px;
+		}
+		.monetization-box img {
+			left: 60px;
+		}
+		.sponsor-list ul {
+			width: 100%;
+			max-width: 840px;
+		}
+	}
 	@media screen and (max-width: 1020px) {
+		.certificate-box-1, .certificate-box-2 {
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			margin: 0 auto;
+			max-width: 500px;
+			width: 100%;
+		}
+		.certificate-box-1 p {
+			margin-left: unset;
+		}
 		.pre-footer-content h5 {
 			top: 7.7%;
 		}
@@ -1287,5 +1324,36 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		.pre-footer-title h3 {
 			top: 3.7%;
 			z-index: 20;
+		}
+	}
+	@media screen and (max-width: 720px) {
+		.monetization {
+			max-width: 500px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.monetization-content ul {
+			padding: 0;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.monetization-box {
+			border: 1px solid #fff;
+			max-width: 500px;
+			width: 100%;
+			position: relative;
+			border-bottom: 8px solid #B4E0E0;
+			height: 280px;
+			transition: border 2s ease-in-out;
+		}
+		.monetization-box img {
+			left: 120px;
+		}
+		.monetization-box p {
+			padding: 18%;
+			line-height: 25px;
+		}
+		.sponsor-list ul li {
+			width: 25%;
 		}
 	}
