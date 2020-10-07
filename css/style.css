@@ -1449,7 +1449,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		.sponsor-bg {
 			height: 3300px;
 		}
-		#main-menu-contact {
+		.nav-contact {
 			display: none;
 		}
 		.contact-content {
@@ -1458,7 +1458,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			width: 100%;
 			margin: 0 auto;
 			position: relative;
-			margin-top: 70%;
 		}
 		#contact-hambi {
 			position: absolute;
@@ -1547,7 +1546,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			top: -80px;
 		}
 		.contact-content {
-			margin-top: 80%;
+			padding: 5px;
 		}
 		.contact-form {
 			width: 100%;
