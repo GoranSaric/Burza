@@ -609,7 +609,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		letter-spacing: -0.01em;
 		max-width: 1240px;
 		width: 100%;
-		margin: 5% auto;
+		margin: 10% auto;
 	}
 	.monetization {
 		max-width: 1240px;
@@ -666,7 +666,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 	.sponsor-bg {
 		background: url("../assets/images/background_alt_long.png");
-		height: 3000px;
+		height: 2500px;
 		position: relative;
 		max-width: 1920px;
 		width: 100%;
@@ -705,12 +705,16 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		max-width: 1000px;
 		margin: 0 auto;
 	}
-	.sponsor-title img {
+	.sponsor-title .sponsor-bg-map {
+		background: url("../assets/images/map.png");
+		height: 750px;
 		position: relative;
 		top: -100px;
 		margin: 0 auto;
 		max-width: 1300px;
 		width: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	.list-title {
 		position: relative;
@@ -750,7 +754,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		list-style-type: none;
 		flex-wrap: wrap;
 		max-width: 1140px;
-		width: 100%;
 		margin: 0 auto;
 	}
 	.sponsor-list ul li {
@@ -1298,11 +1301,13 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			left: 60px;
 		}
 		.sponsor-list ul {
-			width: 100%;
 			max-width: 840px;
 		}
 	}
 	@media screen and (max-width: 1020px) {
+		.sponsor-bg {
+			height: 3000px;
+		}
 		.certificate-box-1, .certificate-box-2 {
 			display: flex;
 			align-items: flex-start;
@@ -1326,7 +1331,42 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			z-index: 20;
 		}
 	}
-	@media screen and (max-width: 720px) {
+	@media screen and (max-width: 920px) {
+		.header-content {
+			left: 2%;
+		}
+	}
+	@media screen and (max-width: 820px) {
+		.header-background h2 {
+			left: 47px;
+		}
+		.header-background h1 {
+			left: 38px;
+		}
+		.header-background h5 {
+			left: 38px;
+			text-align: left;
+			width: 750px;
+		}
+		.header-background p {
+			width: 650px;
+			left: 39px;
+			top: 355px;
+		}
+		.header-background ul {
+			max-width: 500px;
+		}
+		.smartphone-border {
+			display: none;
+		}
+		.triglav-content {
+			position: relative;
+			margin: 0 auto;
+			right: unset;
+		}
+		.hexagon {
+			display: none;
+		}
 		.monetization {
 			max-width: 500px;
 			width: 100%;
@@ -1355,5 +1395,8 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		}
 		.sponsor-list ul li {
 			width: 25%;
+		}
+		.sponsor-bg {
+			height: 3300px;
 		}
 	}
