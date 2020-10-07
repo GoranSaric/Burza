@@ -922,8 +922,8 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 	.footer-col-1-contact {
 		position: absolute;
-		left: 19%;
-		top: 840px;
+		left: 5%;
+		top: unset;
 	}
 	.footer-col-1-contact h5 {
 		font-family: Museo Sans;
@@ -938,9 +938,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 	.footer-col-2-contact {
 		position: absolute;
-		bottom: 5%;
-		right: 19%;
-		top: 840px;
+		bottom: unset;
+		right: 5%;
+		top: unset;
 	}
 	.footer-col-2-contact ul {
 		list-style-type: none;
@@ -950,8 +950,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	.footer-col-2-contact ul li {
 		padding: 0 10px;
 	}
-
-
 
 	/* footer contact */
 
@@ -1023,24 +1021,30 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 	.contact-page {
 		position: relative;
+		max-width: 1920px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
 	}
 	.contact-bg {
+		background: url("../assets/images/contact-polygon.png")no-repeat;
 		position: absolute;
-		top: 157px;
+		top: 300px;
 		left: 0;
 		height: 780px;
 		z-index: 0;
+		width: 100%;
+		bottom: 0;
 	}
 	.contact-content {
-		position: absolute;
-		width: 386px;
+		max-width: 386px;
 		height: 100px;
-		left: 352px;
-		top: 27px;
+		width: 45%;
 	}
 	.contact-content h2 {
 		position: absolute;
-		width: 386px;
+		max-width: 386px;
 		top: 67px;
 		font-family: Museo Sans;
 		font-size: 96px;
@@ -1051,7 +1055,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 	}
 	.contact-content h3 {
 		position: absolute;
-		width: 742px;
+		max-width: 742px;
 		top: 26px;
 		font-family: Museo Sans;
 		font-size: 144px;
@@ -1112,10 +1116,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		background: url("../assets/images/Rectangle_contact.png");
 		height: 740px;
 		max-width: 600px;
-		width: 100%;
-		position: absolute;
-		right: 15%;
-		top: 180px;
+		width: 45%;
+		position: relative;
+		margin-top: 160px;
 	}
 	.contact-form img {
 		position: absolute;
@@ -1126,9 +1129,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-
 		max-width: 480px;
-		width: 100%;
 		padding: 60px;
 	}
 	.contact-form form p {
@@ -1152,6 +1153,8 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		border: none;
 		box-shadow: -10px 30px 32px rgba(23, 164, 164, 0.16);
 		border-radius: 4px;
+		max-width: 300px;
+		width: 100%;
 	}
 	::placeholder {
 		font-family: Source Sans Pro;
@@ -1299,6 +1302,28 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		#main-menu ul li {
 			padding: 0 10px;
 		}
+		.contact-page {
+			justify-content: space-between;
+			flex-direction: column;
+		}
+		.contact-content {
+			max-width: 386px;
+			height: 900px;
+			width: 100%;
+			margin: 0 auto;
+			margin-left: 27%;
+		}
+		.contact-form {
+			height: 740px;
+			max-width: 600px;
+			width: 55%;
+			position: relative;
+			margin-top: 160px;
+			margin: 0 auto;
+		}
+		.contact-bg {
+			display: none;
+		}
 	}
 	@media screen and (max-width: 1120px) {
 		.monetization-box p {
@@ -1338,10 +1363,16 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			top: 3.7%;
 			z-index: 20;
 		}
+		#main-menu-contact ul li {
+			padding: 0 20px;
+		}
 	}
 	@media screen and (max-width: 920px) {
 		.header-content {
 			left: 2%;
+		}
+		.contact-form {
+			width: 65%;
 		}
 	}
 	@media screen and (max-width: 820px) {
@@ -1418,6 +1449,33 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		.sponsor-bg {
 			height: 3300px;
 		}
+		#main-menu-contact {
+			display: none;
+		}
+		.contact-content {
+			max-width: 501px;
+			height: 900px;
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			margin-top: 70%;
+		}
+		#contact-hambi {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			z-index: 20;
+		}
+		#contact-hambi div {
+			display: block;
+			width: 35px;
+			height: 5px;
+			background-color: #000;
+			margin: 6px 0;
+		}
+		.contact-form img {
+			left: 150px;
+		}
 	}
 	@media screen and (max-width: 750px) {
 		.header-background h5 {
@@ -1488,6 +1546,12 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			height: 540px;
 			top: -80px;
 		}
+		.contact-content {
+			margin-top: 80%;
+		}
+		.contact-form {
+			width: 100%;
+		}
 	}
 	@media screen and (max-width: 550px) {
 		.header-background h2 {
@@ -1538,6 +1602,23 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 			bottom: 0;
 			right: 5%;
 		}
+		.contact-content {
+			height: 700px;
+		}
+		.contact-content h2 {
+			top: 13px;
+			font-size: 66px;
+		}
+		.contact-content h3 {
+			top: 26px;
+			font-size: 74px;
+		}
+		.contact-content h5 {
+			top: 170px;
+		}
+		.contact-offices {
+			top: 200px;
+		}
 	}
 	@media screen and (max-width: 450px) {
 		.sponsor-title .sponsor-bg-map {
@@ -1556,5 +1637,25 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 		.pre-footer-content h5 {
 			top: 3.7%;
 			left: 3.4%;
+		}
+		.contact-form img {
+			left: 90px;
+		}
+		.contact-form form {
+			padding: 20px;
+		}
+		.footer-col-1-contact {
+			position: relative;
+			left: 2%;
+		}
+		.footer-col-2-contact {
+			position: relative;
+			right: 0;
+		}
+		.footer-col-2-contact ul {
+			padding-left: 0;
+		}
+		input[type="text"], input[type="email"], textarea {
+			padding: 20px 0px;
 		}
 	}
