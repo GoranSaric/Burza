@@ -5,8 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/icon" href="assets/images/favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<meta charset="utf-8"/>
 </head>
+<script>
+	jQuery(document).ready(function() {
+		$("#hambi").click(function(){
+			$(".mobile-nav").toggle("swing");
+			$(".logo").hide();
+		});
+	});
+
+	jQuery(document).ready(function() {
+		$(".close-btn").click(function(){
+			$(".mobile-nav").toggle("swing");
+			$(".logo").show();
+		});
+	});
+</script>
 <body>
 	<header>
 		<div id="main-menu">
@@ -28,23 +45,51 @@
 				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Deutch</a></li>
 			</ul>
 		</div>
+
+		<div id="hambi">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+<!-- Mobile Menu -->
+		<div class="mobile-nav">
+			<ul class="mobile-logo">
+				<img src="assets/images/COMPANY-contact.png">
+				<img class="close-btn" src="assets/images/close.png">
+			</ul>
+			<ul class="mobile-nav-list">
+				<li><a href="#">Home</a></li>
+				<li class="mobile-dropdown"><span><a href="">Platform</a></span>
+					<ul class="mobile-dropdown-content">
+						<li>Acquire</li>
+						<li>Create</li>
+						<li>Engage</li>
+						<li>Sell</li>
+					</ul>
+				</li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Insights</a></li>
+				<li class="mobile-button"><a href="http://localhost/Burza/contact.html">Get in touch</a></li>
+				<li class="lang"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Deutch</a></li>
+			</ul>
+		</div>
 	</header>
 
 
-		<div class="header-background">
-			<div class="header-content">
-				<h2>Perfect</h2>
-				<h1>Insurance</h1>
-				<h5>Risk Prevention through Behavior Based Icentivess</h5>
-				<p>Users who display low risk behaviour will get discounts and other benefits of your choice. So far, we have deployed succesfully in more than 18 countries around the world.</p>
-				<ul>
-					<li><img src="assets/images/bullet.png"><span>Risk Prevention, through behavior based incentives</span></li>
-					<li><img src="assets/images/bullet.png">Lower Claims, through carefully selected and engaged customer base</li>
-					<li><img src="assets/images/bullet.png">Fraud Control by real-time verification of the insured object and/or claim over the smartphone camera</li>
-				</ul>
-			</div>
-			<div class="header-overlay"></div>
+	<div class="header-background">
+		<div class="header-content">
+			<h2>Perfect</h2>
+			<h1>Insurance</h1>
+			<h5>Risk Prevention through Behavior Based Icentivess</h5>
+			<p>Users who display low risk behaviour will get discounts and other benefits of your choice. So far, we have deployed succesfully in more than 18 countries around the world.</p>
+			<ul>
+				<li><img src="assets/images/bullet.png"><span>Risk Prevention, through behavior based incentives</span></li>
+				<li><img src="assets/images/bullet.png"><span>Lower Claims, through carefully selected and engaged customer base</span></li>
+				<li><img src="assets/images/bullet.png"><span>Fraud Control by real-time verification of the insured object and/or claim over the smartphone camera</span></li>
+			</ul>
 		</div>
+		<div class="header-overlay"></div>
+	</div>
 
 		<!-- Under construction
 		<div class="scroll-box">
@@ -71,159 +116,159 @@
 				</ul>
 			</div>
 		</div>
-	
-	<div class="cost-section">
-		<div class="cost-content">
-			<div class="cost-title">
-				<h2>Cost Efficient Distribution through Digital Channels</h2>
-				<p>Distribute your insurance products directly through digital (smartphone) channels</p>
+
+		<div class="cost-section">
+			<div class="cost-content">
+				<div class="cost-title">
+					<h2>Cost Efficient Distribution through Digital Channels</h2>
+					<p>Distribute your insurance products directly through digital (smartphone) channels</p>
+				</div>
+				<div class="cost-list">
+					<ul>
+						<li><img src="assets/images/icon_1.png"><span>Quote and Sell Insurance Products (New and Traditional) directly through Company Smartphone technology.</span></li>
+						<li><img src="assets/images/icon_2.png"><span>Run Smart Policy Management for your portfolio distributed through digital channels based on Company Digital Policy Management module</span></li>
+						<li><img src="assets/images/icon_3.png"><span>Extend your digital distribution indirectly Improve your indirect distribution channel with the Company smartphone SDKapp, reach customers in other parts of the country</span></li>
+					</ul>
+				</div>
 			</div>
-			<div class="cost-list">
-				<ul>
-					<li><img src="assets/images/icon_1.png"><span>Quote and Sell Insurance Products (New and Traditional) directly through Company Smartphone technology.</span></li>
-					<li><img src="assets/images/icon_2.png"><span>Run Smart Policy Management for your portfolio distributed through digital channels based on Company Digital Policy Management module</span></li>
-					<li><img src="assets/images/icon_3.png"><span>Extend your digital distribution indirectly Improve your indirect distribution channel with the Company smartphone SDKapp, reach customers in other parts of the country</span></li>
-				</ul>
+			<div class="slide-title">
+				<h3>Successful implementation</h3>
 			</div>
+			<div class="cost-slide">
+				<div class="cost-map-1"></div>
+				<div class="cost-map-2"></div>
+				<div class="smartphone-border">
+					<div class="smartphone">
+						<div class="content">
+							<img src="assets/images/screen.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="triglav-content">
+					<div id="triangle-up"></div>
+					<img src="assets/images/triglav_osiguranje_logo.png">
+					<h4>Taking your kids to school?<span> We'll offer you child insurance!</span></h4>
+					<p><span>More than 8%</span> of  the total market onboarded in less than 18 months</p>
+					<hr>
+					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">read more</a>
+				</div>
+				<div class="hexagon">
+					<a href="" class="prev-arrow">
+						<img src="assets/images/arrow_previous.png">
+					</a>
+					<a href=""><span>1/2</span></a>
+					<a href="" class="next-arrow">
+						<img src="assets/images/arrow_next.png">
+					</a>
+				</div>
+			</div>
+
 		</div>
-		<div class="slide-title">
-			<h3>Successful implementation</h3>
+
+		<div class="monetization-section">
+			<h2 class="monetization-title">Monetize on Just in Time Marketing capabilities of Company Platform</h2>
+			<div class="monetization">
+				<div class="monetization-content">
+					<ul>
+						<li class="monetization-box">
+							<img src="assets/images/tick_icon_teal.png">
+							<p>Company does advanced behavior profiling based on geo-location, usage and behavior data from multiple sources.</p>
+						</li>
+						<li class="monetization-box">
+							<img src="assets/images/tick_icon_teal.png">
+							<p>Customer segmentation built on behaviour data with significantly stronger predictive capability than any demographic data.</p>
+						</li>	
+						<li class="monetization-box">
+							<img src="assets/images/tick_icon_teal.png">
+							<p>Run automated and scheduled promotion campaigns through various channels: SMS, WhatsApp, email, Push Notification, all via Company Digital Communication module.</p>
+						</li>		
+					</ul>
+				</div>
+			</div>
+			<h4 class="monetization-subtitle">After recording more than 1.5 billion kilometers of user mobility and using the data in the customer engagement process, we have achieved an 18% rise of conversion rates</h4>
 		</div>
-		<div class="cost-slide">
-			<div class="cost-map-1"></div>
-			<div class="cost-map-2"></div>
-			<div class="smartphone-border">
-				<div class="smartphone">
-					<div class="content">
-						<img src="assets/images/screen.png">
+
+		<section>
+			<div class="sponsor-bg">
+				<div class="sponsor-title">
+					<h2>Trusted by clients on 5 continents</h2>
+					<h5>Over 20 connected insurance projects in various markets</h5>
+					<p>We work across the globe. Markets worldwide have different road infrastructure, legal environment and general market conditions. Companies apply different strategies to tackle opportunities. No templates exists that can be universally applied across the board. A tailored solution is the only solution that will fit perfectly. Drop us a note.</p>
+					<div class="sponsor-bg-map">
+						<!-- <img src="assets/images/map.png"> -->
+					</div>
+				</div>
+				<div class="list-title">
+					<h2>Live Company platforms</h2>
+					<h5>Already a part of digital transformation projects</h5>
+				</div>
+				<div class="sponsor-list">
+					<ul>
+						<li><img src="assets/images/sponsor-logo/aig.png"></li>
+						<li><img src="assets/images/sponsor-logo/bnp-paribas.png"></li>
+						<li><img src="assets/images/sponsor-logo/compensa.png"></li>
+						<li><img src="assets/images/sponsor-logo/p_v.png"></li>
+						<li><img src="assets/images/sponsor-logo/sk_telecom.png"></li>
+						<li><img src="assets/images/sponsor-logo/triglav.png"></li>
+
+						<li><img src="assets/images/sponsor-logo/porsche.png"></li>
+						<li><img src="assets/images/sponsor-logo/baloise.png"></li>
+						<li><img src="assets/images/sponsor-logo/tele_austria.png"></li>
+						<li><img src="assets/images/sponsor-logo/youse.png"></li>
+						<li><img src="assets/images/sponsor-logo/double_s.png"></li>
+						<li><img src="assets/images/sponsor-logo/maritime.png"></li>
+					</ul>
+				</div>
+				<div class="certificate-content">
+					<div class="certificate-box-1">
+						<div class="certificate-box-1-title">
+							<h3>ISO certified</h3>
+						</div>
+						<p>It makes a difference. We’ve passed all the tests, we are safe from data breaching and within ISO quality standards. Amodo is certified for Quality Management and Information Security Management.</p>
+						<img src="assets/images/talogo.png">
+					</div>
+					<div class="certificate-box-2">
+						<div class="certificate-box-2-title">
+							<h3>We’ve won already</h3>
+						</div>
+						<p>Company is announced as the leading company in the Insurance industry for Customer Engagement by Best Review magazine in the USA.
+							<br><span>Implementation of Company technology got us into the award winning business Triglav’s UBI smartphone app is named the #1 app in Europe in 2018 by the world’s most comprehensive mobile insurance study created by PTOLEMUS</span><br>
+						UBI smartphone app is named the Top #3 Mobile Insurance Proposition in Asia, Middle-East and Africa, in 2018, by PTOLEMUS.</p>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<div class="triglav-content">
-				<div id="triangle-up"></div>
-				<img src="assets/images/triglav_osiguranje_logo.png">
-				<h4>Taking your kids to school?<span> We'll offer you child insurance!</span></h4>
-				<p><span>More than 8%</span> of  the total market onboarded in less than 18 months</p>
-				<hr>
-				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">read more</a>
-			</div>
-			<div class="hexagon">
-				<a href="" class="prev-arrow">
-					<img src="assets/images/arrow_previous.png">
-				</a>
-				<a href=""><span>1/2</span></a>
-				<a href="" class="next-arrow">
-					<img src="assets/images/arrow_next.png">
-				</a>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="monetization-section">
-		<h2 class="monetization-title">Monetize on Just in Time Marketing capabilities of Company Platform</h2>
-		<div class="monetization">
-			<div class="monetization-content">
-				<ul>
-				<li class="monetization-box">
-					<img src="assets/images/tick_icon_teal.png">
-					<p>Company does advanced behavior profiling based on geo-location, usage and behavior data from multiple sources.</p>
-				</li>
-				<li class="monetization-box">
-					<img src="assets/images/tick_icon_teal.png">
-					<p>Customer segmentation built on behaviour data with significantly stronger predictive capability than any demographic data.</p>
-				</li>	
-				<li class="monetization-box">
-					<img src="assets/images/tick_icon_teal.png">
-					<p>Run automated and scheduled promotion campaigns through various channels: SMS, WhatsApp, email, Push Notification, all via Company Digital Communication module.</p>
-				</li>		
-				</ul>
-			</div>
-		</div>
-		<h4 class="monetization-subtitle">After recording more than 1.5 billion kilometers of user mobility and using the data in the customer engagement process, we have achieved an 18% rise of conversion rates</h4>
-	</div>
-
-	<section>
-		<div class="sponsor-bg">
-			<div class="sponsor-title">
-				<h2>Trusted by clients on 5 continents</h2>
-				<h5>Over 20 connected insurance projects in various markets</h5>
-				<p>We work across the globe. Markets worldwide have different road infrastructure, legal environment and general market conditions. Companies apply different strategies to tackle opportunities. No templates exists that can be universally applied across the board. A tailored solution is the only solution that will fit perfectly. Drop us a note.</p>
-				<div class="sponsor-bg-map">
-				<!-- <img src="assets/images/map.png"> -->
-				</div>
-			</div>
-			<div class="list-title">
-				<h2>Live Company platforms</h2>
-				<h5>Already a part of digital transformation projects</h5>
-			</div>
-			<div class="sponsor-list">
-				<ul>
-					<li><img src="assets/images/sponsor-logo/aig.png"></li>
-					<li><img src="assets/images/sponsor-logo/bnp-paribas.png"></li>
-					<li><img src="assets/images/sponsor-logo/compensa.png"></li>
-					<li><img src="assets/images/sponsor-logo/p_v.png"></li>
-					<li><img src="assets/images/sponsor-logo/sk_telecom.png"></li>
-					<li><img src="assets/images/sponsor-logo/triglav.png"></li>
-				
-					<li><img src="assets/images/sponsor-logo/porsche.png"></li>
-					<li><img src="assets/images/sponsor-logo/baloise.png"></li>
-					<li><img src="assets/images/sponsor-logo/tele_austria.png"></li>
-					<li><img src="assets/images/sponsor-logo/youse.png"></li>
-					<li><img src="assets/images/sponsor-logo/double_s.png"></li>
-					<li><img src="assets/images/sponsor-logo/maritime.png"></li>
-				</ul>
-			</div>
-			<div class="certificate-content">
-				<div class="certificate-box-1">
-					<div class="certificate-box-1-title">
-						<h3>ISO certified</h3>
+		<section class="pre-footer">
+			<div class="pre-footer-box">
+				<div class="pre-footer-content">
+					<h5>dive deeper</h5>
+					<div class="pre-footer-title">
+						<h2>Platform</h2>
+						<h3>Acquire</h3>
 					</div>
-					<p>It makes a difference. We’ve passed all the tests, we are safe from data breaching and within ISO quality standards. Amodo is certified for Quality Management and Information Security Management.</p>
-					<img src="assets/images/talogo.png">
+					<img class="arrow" src="assets/images/arrow.png">
 				</div>
-				<div class="certificate-box-2">
-					<div class="certificate-box-2-title">
-						<h3>We’ve won already</h3>
-					</div>
-					<p>Company is announced as the leading company in the Insurance industry for Customer Engagement by Best Review magazine in the USA.
-						<br><span>Implementation of Company technology got us into the award winning business Triglav’s UBI smartphone app is named the #1 app in Europe in 2018 by the world’s most comprehensive mobile insurance study created by PTOLEMUS</span><br>
-					UBI smartphone app is named the Top #3 Mobile Insurance Proposition in Asia, Middle-East and Africa, in 2018, by PTOLEMUS.</p>
+				<div class="pre-footer-map">
+					<img src="assets/images/Hexagon.png">
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="pre-footer">
-		<div class="pre-footer-box">
-			<div class="pre-footer-content">
-				<h5>dive deeper</h5>
-				<div class="pre-footer-title">
-					<h2>Platform</h2>
-					<h3>Acquire</h3>
+		<footer>
+			<div class="footer-contact">
+				<div class="footer-col-1">
+					<h5>© COMPANY Privacy policy</h5>
 				</div>
-				<img class="arrow" src="assets/images/arrow.png">
+				<div class="footer-col-2">
+					<ul>
+						<li><a href=""><img src="assets/images/linkedin.png"></a></li>
+						<li><a href=""><img src="assets/images/facebook.png"></a></li>
+						<li><a href=""><img src="assets/images/twitter.png"></a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="pre-footer-map">
-				<img src="assets/images/Hexagon.png">
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<div class="footer-contact">
-			<div class="footer-col-1">
-				<h5>© COMPANY Privacy policy</h5>
-			</div>
-			<div class="footer-col-2">
-				<ul>
-					<li><a href=""><img src="assets/images/linkedin.png"></a></li>
-					<li><a href=""><img src="assets/images/facebook.png"></a></li>
-					<li><a href=""><img src="assets/images/twitter.png"></a></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-</body>
-</html>
+		</footer>
+	</body>
+	</html>
